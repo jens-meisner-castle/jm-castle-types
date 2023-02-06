@@ -66,6 +66,11 @@ export const ValueUnits = Object.assign({}, DurationUnits, {
   l: { id: "l", name: "Liter", cat: "volume" },
 });
 
+export type ValueUnit = keyof typeof ValueUnits;
+
+export const isValueUnit = (s: string): s is ValueUnit =>
+  !!ValueUnits[s as ValueUnit];
+
 export const isDurationUnit = (s: string): s is DurationUnit =>
   !!DurationUnits[s as DurationUnit];
 
