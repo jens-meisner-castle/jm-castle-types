@@ -1,4 +1,3 @@
-
 export const ValueTypes = {
   number: { id: "number", name: "Eine Zahl" },
   string: { id: "string", name: "Eine Zeichenfolge" },
@@ -11,6 +10,11 @@ export const ValueTypes = {
     name: "Datum (formatiert als <yyyy-MM-dd HH:mm:ss> oder numerisch als Millisekundenwert)",
   },
 };
+
+export type ValueType = keyof typeof ValueTypes;
+
+export const isValueType = (s: string): s is ValueType =>
+  !!ValueTypes[s as ValueType];
 
 export type LuxonKey = "millisecond" | "second" | "minute" | "hour" | "day";
 
@@ -63,5 +67,3 @@ export const isDurationUnit = (s: string): s is DurationUnit =>
 
 export const getCategoryOfUnit = (id: keyof typeof ValueUnits) =>
   ValueUnits[id]?.cat;
-
-
