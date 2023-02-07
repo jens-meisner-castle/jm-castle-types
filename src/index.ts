@@ -60,6 +60,8 @@ export const ValueUnits = Object.assign({}, DurationUnits, {
   Wh: { id: "Wh", name: "Wattstunde", cat: "energy" },
   kWh: { id: "kWh", name: "Kilowattstunde", cat: "energy" },
   V: { id: "V", name: "Volt", cat: "voltage" },
+  A: { id: "A", name: "Ampere", cat: "current" },
+  mA: { id: "mA", name: "Milliampere", cat: "current" },
   piece: { id: "piece", name: "Stück", cat: "count" },
   m: { id: "m", name: "Meter", cat: "length" },
   kg: { id: "kg", name: "Kilogramm", cat: "weight" },
