@@ -26,6 +26,7 @@ import {
   ValueType,
   ValueTypes,
   ValueUnit,
+  ValueUnits,
 } from "./value-type/index.js";
 
 export {
@@ -53,6 +54,7 @@ export {
   DurationUnits,
   DurationUnit,
   ValueUnit,
+  ValueUnits,
   isValueUnit,
   isDurationUnit,
   getCategoryOfUnit,
