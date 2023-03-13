@@ -30,6 +30,21 @@ import {
 } from "./value-type/index.js";
 
 import {
+  AlterTablesResponse,
+  BatchResponse,
+  ColumnStatus,
+  CreateDbResponse,
+  CreateTablesResponse,
+  DeleteResponse,
+  ExecuteSetupResponse,
+  FindResponse,
+  InsertResponse,
+  SelectResponse,
+  Table,
+  TableStatus,
+  UpdateResponse,
+} from "./database/index.js";
+import {
   isWsMessage,
   msg_ping,
   msg_pong,
@@ -41,6 +56,21 @@ import {
   WsMethods,
 } from "./ws-message/index.js";
 
+export {
+  AlterTablesResponse,
+  BatchResponse,
+  CreateDbResponse,
+  CreateTablesResponse,
+  DeleteResponse,
+  ExecuteSetupResponse,
+  FindResponse,
+  InsertResponse,
+  SelectResponse,
+  UpdateResponse,
+  ColumnStatus,
+  Table,
+  TableStatus,
+};
 export {
   WsMessage,
   WsMethod,
