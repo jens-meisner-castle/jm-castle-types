@@ -1,4 +1,19 @@
 import {
+  AlterTablesResponse,
+  BatchResponse,
+  ColumnStatus,
+  CreateDbResponse,
+  CreateTablesResponse,
+  DeleteResponse,
+  ExecuteSetupResponse,
+  FindResponse,
+  InsertResponse,
+  SelectResponse,
+  Table,
+  TableStatus,
+  UpdateResponse,
+} from "./database/index.js";
+import {
   BadRequestBadParameterCode,
   BadRequestMissingParameterCode,
   CastleConfigErrorCode,
@@ -15,6 +30,7 @@ import {
   UnknownClientOrBadIpCode,
   UnknownErrorCode,
 } from "./error/index.js";
+import { getDateFormat } from "./format/index.js";
 import {
   DurationUnit,
   DurationUnits,
@@ -28,22 +44,6 @@ import {
   ValueUnit,
   ValueUnits,
 } from "./value-type/index.js";
-
-import {
-  AlterTablesResponse,
-  BatchResponse,
-  ColumnStatus,
-  CreateDbResponse,
-  CreateTablesResponse,
-  DeleteResponse,
-  ExecuteSetupResponse,
-  FindResponse,
-  InsertResponse,
-  SelectResponse,
-  Table,
-  TableStatus,
-  UpdateResponse,
-} from "./database/index.js";
 import {
   isWsMessage,
   msg_ping,
@@ -56,6 +56,7 @@ import {
   WsMethods,
 } from "./ws-message/index.js";
 
+export { getDateFormat };
 export {
   AlterTablesResponse,
   BatchResponse,
