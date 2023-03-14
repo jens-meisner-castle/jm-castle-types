@@ -1,3 +1,4 @@
+import { ApiServiceResponse } from "./api/index";
 import {
   AlterTablesResponse,
   BatchResponse,
@@ -57,6 +58,7 @@ import {
   WsMethods,
 } from "./ws-message/index.js";
 
+export { ApiServiceResponse };
 export { SystemSetupStatus };
 export { getDateFormat };
 export {

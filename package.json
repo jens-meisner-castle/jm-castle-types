@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-types",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "type": "module",
   "private": false,
   "module": "./build",
