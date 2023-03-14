@@ -31,6 +31,7 @@ import {
   UnknownErrorCode,
 } from "./error/index.js";
 import { getDateFormat } from "./format/index.js";
+import { SystemSetupStatus } from "./setup/SystemSetupStatus";
 import {
   DurationUnit,
   DurationUnits,
@@ -56,6 +57,7 @@ import {
   WsMethods,
 } from "./ws-message/index.js";
 
+export { SystemSetupStatus };
 export { getDateFormat };
 export {
   AlterTablesResponse,
