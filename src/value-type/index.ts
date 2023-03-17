@@ -58,6 +58,7 @@ export const ValueUnits = Object.assign({}, DurationUnits, {
   W: { id: "W", name: "Watt", cat: "power" },
   Wmin: { id: "Wmin", name: "Wattminute", cat: "energy" },
   Wh: { id: "Wh", name: "Wattstunde", cat: "energy" },
+  Wh_per_h: { id: "Wh_per_h", name: "Wattstunden pro Stunde", cat: "energy-per-time" },
   kWh: { id: "kWh", name: "Kilowattstunde", cat: "energy" },
   V: { id: "V", name: "Volt", cat: "voltage" },
   A: { id: "A", name: "Ampere", cat: "current" },
