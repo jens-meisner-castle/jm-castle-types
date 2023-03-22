@@ -9,57 +9,63 @@ export const TokenExpiredErrorCode = "40102";
 // name is coming from jsonwebtoken library
 export const JsonWebTokenError = "40103";
 export const UnknownClientOrBadIpCode = "40104";
+export const BadTimeForRequestTryLaterCode = "42501"
 export const CastleConfigErrorCode = "66601";
 export const DevErrorCode = "77701";
 export const SqlDataErrorCode = "88801";
 
 export const ErrorCodes = {
-  "-1": {
+  [UnknownErrorCode]: {
     name: "UnknownError",
     description: "Used, if a new or unknwon error name was used.",
     apiStatus: 500,
   },
-  "40001": {
+  [BadRequestMissingParameterCode]: {
     name: "BadRequestMissingParameter",
     description: "One or more needed parameters are undefined.",
     apiStatus: 400,
   },
-  "40002": {
+  [BadRequestBadParameterCode]: {
     name: "BadRequestBadParameter",
     description: "One or more parameters are not correct.",
     apiStatus: 400,
   },
-  "40101": {
+  [TokenUndefinedErrorCode]: {
     name: "TokenUndefinedError",
     description: "Token not specified in request.",
     apiStatus: 401,
   },
-  "40102": {
+  [TokenExpiredErrorCode]: {
     name: "TokenExpiredError",
     description: "Token is too old.",
     apiStatus: 401,
   },
-  "40103": {
+  [JsonWebTokenError]: {
     name: "JsonWebTokenError",
     description: "Token could not be verified.",
     apiStatus: 401,
   },
-  "40104": {
+  [UnknownClientOrBadIpCode]: {
     name: "UnknownClientOrBadIpError",
     description: "Client is unknown or running on not authorized ip.",
     apiStatus: 401,
   },
-  "66601": {
+  [BadTimeForRequestTryLaterCode]: {
+    name: "BadTimeForRequestTryLaterError",
+    description: "Service cannot be used now. Try later.",
+    apiStatus: 425,
+  },
+  [CastleConfigErrorCode]: {
     name: "CastleConfigError",
     description: "Bad configuration of the castle system.",
     apiStatus: 500,
   },
-  "77701": {
+  [DevErrorCode]: {
     name: "DevError",
     description: "This should not happen. Needs a software update.",
     apiStatus: 500,
   },
-  "88801": {
+  [SqlDataErrorCode]: {
     name: "SqlDataError",
     description:
       "Used for bad data. Original error comes from DB Server. Check error no in error message.",
