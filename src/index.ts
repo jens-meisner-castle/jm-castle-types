@@ -1,4 +1,4 @@
-import { ApiServiceResponse } from "./api/index";
+import { ApiServiceResponse } from "./api/index.js";
 import {
   AlterTablesResponse,
   BatchResponse,
@@ -33,7 +33,7 @@ import {
   UnknownErrorCode,
 } from "./error/index.js";
 import { getDateFormat } from "./format/index.js";
-import { SystemSetupStatus } from "./setup/SystemSetupStatus";
+import { SystemSetupStatus } from "./setup/SystemSetupStatus.js";
 import {
   DurationUnit,
   DurationUnits,
